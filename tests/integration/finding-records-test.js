@@ -165,7 +165,7 @@ describe("Integration: FirebaseAdapter - Finding Records", function() {
           title: "Post 3"
         });
       });
-      assert(store.hasRecordForId(store.modelFor('post'), 'post_3'));
+      assert(store.hasRecordForId('post', 'post_3'));
     });
 
     it("handles empty collections", function(done) {
